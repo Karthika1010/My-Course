@@ -14,7 +14,7 @@ public class ReadExcelcode {
 	static XSSFWorkbook w;
 	static XSSFSheet sh;
 	public static String readStringData(int row,int col)throws IOException{
-		f=new FileInputStream("C:\\Users\\HP\\Desktop\\Book1.xlsx");
+		f=new FileInputStream("C:\\Users\\HP\\git\\My-Course\\My_Maven\\src\\main\\resources\\Book1.xlsx");
 		w=new XSSFWorkbook(f);
 		sh=w.getSheet("sheet1");
 		XSSFRow r=sh.getRow(row);
@@ -23,7 +23,7 @@ public class ReadExcelcode {
 	}
 	public static String readIntegerData(int row,int col)throws IOException
 	{
-		f=new FileInputStream("C:\\Users\\HP\\Desktop\\Book1.xlsx");
+		f=new FileInputStream("C:\\Users\\HP\\git\\My-Course\\My_Maven\\src\\main\\resources\\Book1.xlsx");
 		w=new XSSFWorkbook(f);
 		sh=w.getSheet("sheet1");
 		XSSFRow r=sh.getRow(row);
